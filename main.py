@@ -26,6 +26,10 @@ def login():
 def main():
     return render_template('main.html')
 
+@app.route('/kids')
+def kids():
+    return render_template('kids.html')
+
 
 @app.route('/reg_validation',methods=['POST'])
 def reg_validation():
